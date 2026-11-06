@@ -206,78 +206,133 @@
         </div>
         <div class="projects-grid">
 
-            <div class="project-card reveal">
-                <div class="project-card-header">
-                    <span class="project-icon">☁️</span>
-                    <div class="project-links">
-                        <a href="https://github.com/judith2702" target="_blank" class="project-link-icon" aria-label="View on GitHub">
-                            <img src="icons/github.svg" alt="GitHub" style="width:20px;filter:invert(1)">
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">Cloud App Migration</h3>
-                <p class="project-desc">
-                    Architected and automated a full cloud migration leveraging multiple AWS services.
-                    Built automated VM provisioning with deployment scripts, ensuring zero-downtime migration
-                    with scalable, resilient infrastructure.
-                </p>
-                <div class="project-tags">
-                    <span class="project-tag">AWS</span>
-                    <span class="project-tag">EC2</span>
-                    <span class="project-tag">Terraform</span>
-                    <span class="project-tag">Automation</span>
-                    <span class="project-tag">CI/CD</span>
-                </div>
-            </div>
+            <article class="project-card reveal">
+                <div class="project-card-header"><span class="project-icon">☁️</span></div>
+                <h3 class="project-title">Automated Multi-Cloud Application Migration</h3>
+                <p class="project-desc">Designed a Terraform-based AWS, Azure, and GCP migration with Jenkins, Terraform Cloud, and Azure DevOps pipelines, contributing to 99.9% reliability and 40% faster deployments.</p>
+                <button class="project-details-btn" type="button" data-project-details="multi-cloud" aria-controls="project-dialog" aria-haspopup="dialog">View project details <span aria-hidden="true">↗</span></button>
+                <div class="project-tags"><span class="project-tag">Multi-cloud</span><span class="project-tag">IaC</span><span class="project-tag">CI/CD</span></div>
+            </article>
 
-            <div class="project-card reveal">
+            <article class="project-card reveal">
                 <div class="project-card-header">
                     <span class="project-icon">🏗️</span>
-                    <div class="project-links">
-                        <a href="https://github.com/judith2702/terraform-aws-control_tower_account_factory" target="_blank" class="project-link-icon" aria-label="View on GitHub">
-                            <img src="icons/github.svg" alt="GitHub" style="width:20px;filter:invert(1)">
-                        </a>
-                    </div>
+                    <a href="https://github.com/judith2702/terraform-aws-control_tower_account_factory" target="_blank" rel="noopener noreferrer" class="project-repo-link">GitHub repository ↗</a>
                 </div>
-                <h3 class="project-title">AWS Control Tower Migration</h3>
-                <p class="project-desc">
-                    Migrated AWS infrastructure from CloudFormation to Terraform, integrating Terraform Cloud
-                    with GitHub for automated deployments. Created comprehensive documentation
-                    for AWS Marketplace, enabling scalable multi-account governance.
-                </p>
-                <div class="project-tags">
-                    <span class="project-tag">Terraform</span>
-                    <span class="project-tag">AWS Control Tower</span>
-                    <span class="project-tag">CloudFormation</span>
-                    <span class="project-tag">GitHub Actions</span>
-                </div>
-            </div>
+                <h3 class="project-title">AWS Control Tower Account Factory Automation</h3>
+                <p class="project-desc">Automated multi-account AWS provisioning and governance with AFT, Control Tower, AWS Organizations, Step Functions, and Terraform.</p>
+                <button class="project-details-btn" type="button" data-project-details="aft" aria-controls="project-dialog" aria-haspopup="dialog">View project details <span aria-hidden="true">↗</span></button>
+                <div class="project-tags"><span class="project-tag">Account provisioning</span><span class="project-tag">Governance</span><span class="project-tag">Terraform</span></div>
+            </article>
 
-            <div class="project-card reveal">
-                <div class="project-card-header">
-                    <span class="project-icon">🌐</span>
-                    <div class="project-links">
-                        <a href="https://github.com/judith2702" target="_blank" class="project-link-icon" aria-label="View on GitHub">
-                            <img src="icons/github.svg" alt="GitHub" style="width:20px;filter:invert(1)">
-                        </a>
-                    </div>
-                </div>
-                <h3 class="project-title">Developer Portfolio</h3>
-                <p class="project-desc">
-                    Designed and developed this responsive personal portfolio website from scratch using
-                    HTML, CSS, and JavaScript. Features a space-themed design, smooth animations,
-                    scroll-reveal effects, and a fully mobile-responsive layout.
-                </p>
-                <div class="project-tags">
-                    <span class="project-tag">HTML5</span>
-                    <span class="project-tag">CSS3</span>
-                    <span class="project-tag">JavaScript</span>
-                    <span class="project-tag">Responsive</span>
-                </div>
-            </div>
+            <article class="project-card reveal">
+                <div class="project-card-header"><span class="project-icon">🔐</span></div>
+                <h3 class="project-title">Cloud Security and Compliance Improvements</h3>
+                <p class="project-desc">Improved cloud security compliance by 40% with IAM best practices, secure EC2 configurations, automated checks, and CloudTrail/CloudWatch alerting.</p>
+                <button class="project-details-btn" type="button" data-project-details="security" aria-controls="project-dialog" aria-haspopup="dialog">View project details <span aria-hidden="true">↗</span></button>
+                <div class="project-tags"><span class="project-tag">IAM</span><span class="project-tag">Compliance</span><span class="project-tag">Monitoring</span></div>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-card-header"><span class="project-icon">🏠</span></div>
+                <h3 class="project-title">Home Renovation Estimation Platform</h3>
+                <p class="project-desc">Built an end-to-end renovation estimator during my Daarla internship using React, Tailwind CSS, Python, and SQLite; generative AI and predictive estimates are planned for Phase 2.</p>
+                <button class="project-details-btn" type="button" data-project-details="renovation" aria-controls="project-dialog" aria-haspopup="dialog">View project details <span aria-hidden="true">↗</span></button>
+                <div class="project-tags"><span class="project-tag">Full stack</span><span class="project-tag">REST APIs</span><span class="project-tag">AI roadmap</span></div>
+            </article>
+
+            <article class="project-card reveal">
+                <div class="project-card-header"><span class="project-icon">🛠️</span></div>
+                <h3 class="project-title">AWS Infrastructure for Home Owner AB</h3>
+                <p class="project-desc">Automated AWS provisioning with Terraform, configured IAM and networking, and managed MongoDB Atlas to support reliable application deployments at Home Owner AB.</p>
+                <button class="project-details-btn" type="button" data-project-details="homeowner" aria-controls="project-dialog" aria-haspopup="dialog">View project details <span aria-hidden="true">↗</span></button>
+                <div class="project-tags"><span class="project-tag">Infrastructure as Code</span><span class="project-tag">Database operations</span><span class="project-tag">Security</span></div>
+            </article>
 
         </div>
     </section>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+        <div class="project-dialog-panel">
+            <button class="project-dialog-close" type="button" aria-label="Close project details">&times;</button>
+            <div class="project-dialog-content" id="project-dialog-content"></div>
+        </div>
+    </dialog>
+
+    <template id="project-details-multi-cloud">
+        <article class="project-case-study">
+            <span class="section-tag">Client migration</span>
+            <h2 class="project-dialog-title" id="project-dialog-title">Automated Multi-Cloud Application Migration</h2>
+            <p class="project-dialog-stack"><strong>Stack:</strong> AWS · Azure · GCP · Terraform · Jenkins · Terraform Cloud · Azure DevOps</p>
+            <section class="project-detail"><h3>The Problem</h3><p>Client applications needed to move across cloud environments while maintaining reliable service and repeatable deployments.</p></section>
+            <section class="project-detail"><h3>My Role</h3><p>Designed the hybrid-cloud approach, automated infrastructure provisioning with Terraform, and implemented delivery pipelines with Jenkins, Terraform Cloud, and Azure DevOps.</p></section>
+            <section class="project-detail"><h3>Approach and Technical Decisions</h3><p>Used Terraform for infrastructure as code and CI/CD tooling to standardize delivery across cloud environments. The resume does not record alternatives evaluated.</p></section>
+            <section class="project-detail"><h3>Key Challenge</h3><p>Maintaining reliability across a migration spanning multiple cloud providers. A resilient hybrid architecture and infrastructure-as-code practices supported consistent operations.</p></section>
+            <section class="project-detail"><h3>Evidence</h3><p>Resume-backed results: 99.9% system reliability and 40% faster deployments. Architecture diagrams or a public demo were not provided.</p></section>
+            <section class="project-detail"><h3>Outcome</h3><p>Achieved 99.9% system reliability for the multi-cloud strategy and reduced deployment time by 40% through pipeline improvements.</p></section>
+            <section class="project-detail"><h3>What I Would Do Differently</h3><p>Add a migration runbook, architecture diagram, and service-level dashboards to make deployment and reliability decisions easier to review.</p></section>
+        </article>
+    </template>
+
+    <template id="project-details-aft">
+        <article class="project-case-study">
+            <span class="section-tag">Cloud governance</span>
+            <h2 class="project-dialog-title" id="project-dialog-title">AWS Control Tower Account Factory Automation</h2>
+            <p class="project-dialog-stack"><strong>Stack:</strong> AWS Control Tower · AFT · Terraform · AWS Organizations · Step Functions</p>
+            <section class="project-detail"><h3>The Problem</h3><p>Creating and managing accounts across multiple environments requires consistent setup, policy enforcement, and lifecycle processes.</p></section>
+            <section class="project-detail"><h3>My Role</h3><p>Implemented AFT-based account factory automation and managed Control Tower, AWS Organizations, and Step Functions through Terraform.</p></section>
+            <section class="project-detail"><h3>Approach and Technical Decisions</h3><p>Used AFT and Terraform to standardize account provisioning, with Control Tower and organizational policies for governance. The resume does not specify alternatives considered.</p></section>
+            <section class="project-detail"><h3>Key Challenge</h3><p>Keeping account setup and governance consistent as environments grow. Standardized provisioning and policy enforcement addressed that operational need.</p></section>
+            <section class="project-detail"><h3>Evidence</h3><p><a href="https://github.com/judith2702/terraform-aws-control_tower_account_factory" target="_blank" rel="noopener noreferrer">View the AFT Terraform repository ↗</a></p></section>
+            <section class="project-detail"><h3>Outcome</h3><p>Enabled standardized account setup, policy enforcement, and lifecycle management across multiple environments.</p></section>
+            <section class="project-detail"><h3>What I Would Do Differently</h3><p>Expand the repository evidence with automated test results and a clear account-request-to-provisioning architecture diagram.</p></section>
+        </article>
+    </template>
+
+    <template id="project-details-security">
+        <article class="project-case-study">
+            <span class="section-tag">Cloud security</span>
+            <h2 class="project-dialog-title" id="project-dialog-title">Cloud Security and Compliance Improvements</h2>
+            <p class="project-dialog-stack"><strong>Stack:</strong> AWS IAM · EC2 · CloudTrail · CloudWatch · SNS · SQS</p>
+            <section class="project-detail"><h3>The Problem</h3><p>The work focused on improving cloud security compliance and making infrastructure monitoring and alerting more effective.</p></section>
+            <section class="project-detail"><h3>My Role</h3><p>Applied IAM strategies and EC2 security enhancements, automated compliance checks, and set up CloudTrail and CloudWatch monitoring with SNS/SQS alerting.</p></section>
+            <section class="project-detail"><h3>Approach and Technical Decisions</h3><p>Combined identity controls, secure compute configuration, and automated monitoring so security and operational signals could be acted on. The resume does not document alternatives evaluated.</p></section>
+            <section class="project-detail"><h3>Key Challenge</h3><p>Turning security requirements into repeatable controls and actionable alerts. IAM practices, EC2 hardening, and automated monitoring addressed the work described in the resume.</p></section>
+            <section class="project-detail"><h3>Evidence</h3><p>The resume reports a 40% improvement in security compliance and faster resolution through automated log monitoring and alerting.</p></section>
+            <section class="project-detail"><h3>Outcome</h3><p>Improved cloud security compliance by 40% and improved issue-resolution speed with automated monitoring and alerts.</p></section>
+            <section class="project-detail"><h3>What I Would Do Differently</h3><p>Publish a sanitized control checklist and before/after compliance measurement so the improvement can be independently understood.</p></section>
+        </article>
+    </template>
+
+    <template id="project-details-renovation">
+        <article class="project-case-study">
+            <span class="section-tag">Full-stack internship</span>
+            <h2 class="project-dialog-title" id="project-dialog-title">Home Renovation Estimation Platform</h2>
+            <p class="project-dialog-stack"><strong>Stack:</strong> React · Tailwind CSS · Python · SQLite</p>
+            <section class="project-detail"><h3>The Problem</h3><p>The platform needed an integrated web experience for home renovation estimation, with a responsive user interface and backend data handling.</p></section>
+            <section class="project-detail"><h3>My Role</h3><p>As a Full Stack Developer Intern at Daarla, developed the React/Tailwind frontend, Python business logic and API endpoints, and SQLite schemas; integrated the components into a functional platform.</p></section>
+            <section class="project-detail"><h3>Approach and Technical Decisions</h3><p>Separated the interface, backend services, and application data across React, Python, and SQLite. Generative AI and regression-based estimate calculations are planned for Phase 2, not completed features.</p></section>
+            <section class="project-detail"><h3>Key Challenge</h3><p>Connecting frontend interactions to backend business logic and persistent data. Integration across the UI, API endpoints, and SQLite produced the end-to-end application.</p></section>
+            <section class="project-detail"><h3>Evidence</h3><p>The resume documents the frontend, backend, database schema, and end-to-end integration. A public demo or repository link was not supplied.</p></section>
+            <section class="project-detail"><h3>Outcome</h3><p>Delivered a functional full-stack platform. The next planned phase includes generative AI and regression-based estimate calculations.</p></section>
+            <section class="project-detail"><h3>What I Would Do Differently</h3><p>Validate estimate quality against real project data and add a documented API contract and automated integration tests before expanding predictive features.</p></section>
+        </article>
+    </template>
+
+    <template id="project-details-homeowner">
+        <article class="project-case-study">
+            <span class="section-tag">Infrastructure engineering</span>
+            <h2 class="project-dialog-title" id="project-dialog-title">AWS Infrastructure for Home Owner AB</h2>
+            <p class="project-dialog-stack"><strong>Stack:</strong> AWS · Terraform · MongoDB Atlas · IAM · CI/CD</p>
+            <section class="project-detail"><h3>The Problem</h3><p>Application environments needed reliable cloud infrastructure, secure access and networking, and data storage to support production deployments.</p></section>
+            <section class="project-detail"><h3>My Role</h3><p>Designed and managed AWS infrastructure, automated provisioning with Terraform, managed MongoDB Atlas clusters, and collaborated on CI/CD integration.</p></section>
+            <section class="project-detail"><h3>Approach and Technical Decisions</h3><p>Used Terraform for repeatable resource provisioning, IAM and network policies for access control, and MongoDB Atlas for managed data storage. The resume does not specify alternatives evaluated.</p></section>
+            <section class="project-detail"><h3>Key Challenge</h3><p>Coordinating infrastructure, security, data storage, and application deployment needs. IaC, configured access controls, and collaboration with developers connected these parts.</p></section>
+            <section class="project-detail"><h3>Evidence</h3><p>Resume-backed responsibilities include Terraform-based AWS infrastructure, MongoDB Atlas management, IAM/networking configuration, and CI/CD collaboration. No public project artifact was supplied.</p></section>
+            <section class="project-detail"><h3>Outcome</h3><p>Supported scalable, reliable application environments and integrated infrastructure into development deployment workflows.</p></section>
+            <section class="project-detail"><h3>What I Would Do Differently</h3><p>Add infrastructure diagrams, deployment validation checks, and documented database performance and backup targets to make operational readiness measurable.</p></section>
+        </article>
+    </template>
 
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="contact">
