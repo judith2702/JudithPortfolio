@@ -180,37 +180,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /* -------------------------------------------------------
-       8. CONTACT FORM — Formspree AJAX submission
+       8. CONTACT FORM — open a prefilled email draft
     ------------------------------------------------------- */
     const contactForm  = document.getElementById('contact-form');
     const sendBtnText  = document.getElementById('btn-send-text');
     const formSuccess  = document.getElementById('form-success');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', async (e) => {
+        contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            sendBtnText.textContent = 'Sending…';
+            const formData = new FormData(contactForm);
+            const name = String(formData.get('name') || '');
+            const email = String(formData.get('email') || '');
+            const message = String(formData.get('message') || '');
+            const subject = `Portfolio contact from ${name}`;
+            const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+            const mailto = `mailto:judithsoundaryaj@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-            try {
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: new FormData(contactForm),
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (response.ok) {
-                    contactForm.reset();
-                    formSuccess.classList.add('show');
-                    sendBtnText.textContent = 'Send Message';
-                    setTimeout(() => formSuccess.classList.remove('show'), 5000);
-                } else {
-                    sendBtnText.textContent = 'Error — try again';
-                    setTimeout(() => { sendBtnText.textContent = 'Send Message'; }, 3000);
-                }
-            } catch {
-                sendBtnText.textContent = 'Network error';
-                setTimeout(() => { sendBtnText.textContent = 'Send Message'; }, 3000);
-            }
+            formSuccess.classList.add('show');
+            sendBtnText.textContent = 'Open Email App';
+            window.location.href = mailto;
         });
     }
 
